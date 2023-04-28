@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Website With html and css</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="#">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <section class="hero">
+        <div class="main-width">
+            <header>
+                <div class="logo">
+                    <i class="fa-solid fa-d"></i>
+                </div>
+                <nav>
+                    <div class="hamb">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <ul class="nav-list">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#service">Projects</a></li>
+                        <li><a href="#service1">Other Works</a></li>
+                        <li class="btn"><a href="#social" class="btn">Contact Me</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <div class="container">
+                <div class="hero-text">
+                    <h3>Hi, There!</h3>
+                    <h1>I Am <span class="input"></span></h1>
+                    <p id="font-style">I like to craft solid and scalable frontend products with great user experiences.</p>
+                    <a href="https://www.canva.com/design/DAFTxo1rjBQ/13OF4Vy-aTzWMN95Uew8dw/edit#"><button type="button">More About Me</button></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script type="text/javascript" src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+        var typed=new Typed(".input",{
+            strings:["Dishita Jain.","Web developer.","."],
+            typeSpeed: 70,
+            backSpeed: 60,
+            loop:true
+        });
+    </script>
+    <!------About Section------>
+    <section class="about" id="about">
+        <header>
+        <div class="main">
+            <img src="img.jpg" alt="">
+            <div class="about-text">
+                <h2>About Me</h2>
+                <h5>Developer <span>& Designer </span></h5>
+                <p id="font-style">My expertise in creating visually stunning 
+                    and responsive user interfaces using HTML, CSS, and JavaScript. 
+                    I am skilled in developing dynamic and interactive web applications 
+                    that provide an engaging user experience. I have experience collaborating 
+                    with cross-functional teams and delivering high-quality code that meets 
+                    user needs and business objectives.
+                </p>
+            </div>
+        </div>
+        </header>
+    </section>
+    <!-----Projects----->
+    <div class="service" id="service">
+        <div class="title">
+            <h2>Projects</h2>
+        </div>
+        <div class="box">
+            <div class="card">
+                <i class="fa-solid fa-dice"></i>
+                <h5>2D Game</h5>
+                <div class="pra">
+                    <p id="font-style"> Build a complete point and shoot game while learning the fundamentals 
+                    of game development techniques using vanilla JavaScript and HTML5 canvas.</p>
+
+                    <p style="text-align: center;">
+                        <a href="https://github.com/Dishu099/shooter-game" class="button">Read More</a>
+                    </p>
+                </div>
+            </div>
+
+            <div class="card">
+                <i class="fa-solid fa-smile"></i>
+                <h5>Text to Emoji</h5>
+                <div class="pra">
+                    <p id="font-style">Users can enter a message or sentence, and the website will generate a 
+                    series of emojis that represent the words in the text. This can be useful for adding visual
+                    interest to messages or social media posts.</p>
+
+                    <p style="text-align: center;">
+                        <a href="https://github.com/Dishu099/Text-to-emoji" class="button">Read More</a>
+                    </p>
+                </div>
+            </div>
+
+            <div class="card">
+                <i class="fa-solid fa-user"></i>
+                <h5>Blogging Website</h5>
+                <div class="pra">
+                    <p id="font-style">Websites allow users to create a profile, where they can manage their posts
+                    and interact with other users. Users can typically create blog posts using a simple text editor, 
+                    and can add images to their posts.</p>
+
+                    <p style="text-align: center;">
+                        <a href="https://github.com/Dishu099/Blogging-Website" class="button">Read More</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-----Other Works------>
+    <div class="service" id="service1">
+        <div class="title">
+            <h2>Other Works</h2>
+        </div>
+        <div class="box">
+            <div class="card">
+                <i class="fa-solid fa-eye"></i>
+                <h5>Blink</h5>
+                <div class="pra">
+                    <p id="font-style">A virtual mouse which is completely controlled by eyes.
+                        Totally python based project.
+                        Use some of the python library like open cv, pythongui , MediaPipe are used to complete the project.</p>
+
+                    <p style="text-align: center;">
+                        <a href="https://github.com/Dishu099/Blink" class="button">Read More</a>
+                    </p>
+                </div>
+            </div>
+
+            <div class="card">
+                <i class="fa-solid fa-camera"></i>                <h5>Face Recognition Attendance System</h5>
+                <div class="pra">
+                    <p id="font-style">Made this project using python and sql server.
+                        Use openCV and face recognition.
+                        Use SQL Server to store the attendance record.</p>
+
+                    <p style="text-align: center;">
+                        <a href="https://github.com/Dishu099/Face-Recognition-Based-Attendance-System" class="button">Read More</a>
+                    </p>
+                </div>
+            </div>
+
+            <div class="card">
+                <i class="fa-solid fa-car"></i>                <h5>Virtual Vehical</h5>
+                <div class="pra">
+                    <p id="font-style">A virtual self driving vehicle.
+                        Its Totally Python Based project.
+                        Use of a CARLA Simulator for simulation.
+                        Perform some of the main process Object Detection, Perception,
+                        Simulation, Controlling.
+                        Use Reinforcement Learning for training.</p>
+
+                    <p style="text-align: center;">
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!----contacts----->
+
+    <div class="social" id="social">
+        <h2 class="contact">Contact Me:</h2>
+        <ul>
+        <li style="display: inline-block;"><a href="https://www.instagram.com/_d.i.s.h.u_22/"><i class="fa-brands fa-instagram"></i></a></li>
+        <li style="display: inline-block;"><a href="https://www.linkedin.com/in/dishita-jain-680723230/"><i class="fa-brands fa-linkedin"></i></a></li>
+        <li style="display: inline-block;"><a href="https://www.linkedin.com/in/dishita-jain-680723230/"><i class="fa-brands fa-github"></i></a></li>
+        </ul>
+    </div>
+</body>
+</html>
